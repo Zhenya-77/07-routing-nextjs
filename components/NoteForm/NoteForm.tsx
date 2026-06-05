@@ -94,6 +94,7 @@ function NoteForm({ closeModal }: NoteFormProps) {
         <div className={css.formGroup}>
           <label htmlFor={`${id}-tag`}>Tag</label>
           <Field as="select" id={`${id}-tag`} name="tag" className={css.select}>
+            <option value="">---</option>
             <option value="Todo">Todo</option>
             <option value="Work">Work</option>
             <option value="Personal">Personal</option>
